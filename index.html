@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TITLE -->
+<div class="slide active">
+    <h1>Smart Attendance System</h1>
+    <p>Image Verification & Metadata Based Authentication</p>
+    <p>Presented by: Saksham Jain</p>
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="slide">
+    <h2>Introduction</h2>
+    <p>Attendance monitoring is an essential part of academic and organizational environments.</p>
+    <p>Traditional systems rely heavily on manual entry or physical biometric devices.</p>
+    <p>These systems suffer from limitations such as proxy attendance, hardware dependency, and maintenance cost.</p>
+    <p>With digital transformation, automated and intelligent attendance solutions are required.</p>
+</div>
+
+<div class="slide">
+    <h2>Introduction – Need for Smart Systems</h2>
+    <p>Remote learning and hybrid work models require digital attendance verification.</p>
+    <p>Existing biometric solutions are not suitable for remote environments.</p>
+    <p>Image based verification provides a flexible and scalable alternative.</p>
+    <p>This project introduces a secure attendance system using image similarity and metadata validation.</p>
+</div>
+
+
+<!-- LITERATURE REVIEW -->
+<div class="slide">
+    <h2>Literature Review – Traditional Methods</h2>
+    <ul>
+        <li>Manual attendance registers are error prone and time consuming.</li>
+        <li>RFID based systems require physical infrastructure.</li>
+        <li>Biometric fingerprint systems face hygiene and hardware issues.</li>
+        <li>Smart card systems are vulnerable to proxy misuse.</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>Literature Review – Computer Vision Approaches</h2>
+    <p>Recent research focuses on computer vision based attendance systems.</p>
+    <ul>
+        <li>Face recognition using deep learning models</li>
+        <li>Real time camera based monitoring</li>
+        <li>Cloud based identity verification</li>
+        <li>AI powered attendance analytics</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>Literature Review – Research Challenges</h2>
+    <ul>
+        <li>Image spoofing using old photos</li>
+        <li>Duplicate attendance submission</li>
+        <li>Lighting and pose variation</li>
+        <li>Data privacy and storage concerns</li>
+        <li>False acceptance and rejection errors</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>Literature Review – Research Gap</h2>
+    <p>Most existing systems focus only on face recognition accuracy.</p>
+    <p>They do not verify:</p>
+    <ul>
+        <li>Image freshness</li>
+        <li>Metadata authenticity</li>
+        <li>Duplicate submissions</li>
+    </ul>
+    <p>This project addresses these limitations using perceptual hashing and metadata validation.</p>
+</div>
+
+
+<!-- PROBLEM STATEMENT -->
+<div class="slide">
+    <h2>Problem Statement</h2>
+    <p>To design and implement a secure digital attendance system that prevents duplicate and fraudulent submissions by validating image similarity and metadata authenticity.</p>
+</div>
+
+
+<!-- OBJECTIVES -->
+<div class="slide">
+    <h2>Objectives</h2>
+    <ul>
+        <li>Develop automated attendance marking system</li>
+        <li>Prevent duplicate image submission</li>
+        <li>Validate metadata timestamp of images</li>
+        <li>Maintain digital attendance records</li>
+        <li>Improve reliability of remote attendance monitoring</li>
+    </ul>
+</div>
+
+
+<!-- METHODOLOGY -->
+<div class="slide">
+    <h2>System Methodology – Overview</h2>
+    <p>The system follows an image based verification pipeline.</p>
+    <p>User uploads an image → system processes → verifies → stores attendance.</p>
+</div>
+
+<div class="slide">
+    <h2>Image Processing Module</h2>
+    <ul>
+        <li>Image uploaded by user</li>
+        <li>Perceptual hash generated</li>
+        <li>Hash represents visual identity</li>
+        <li>Compared with stored hashes</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>Similarity Detection</h2>
+    <p>Perceptual hashing measures visual similarity between images.</p>
+    <ul>
+        <li>Small hash difference = similar image</li>
+        <li>Threshold used to detect duplication</li>
+        <li>Prevents reuse of same image</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>Metadata Validation</h2>
+    <ul>
+        <li>Extract EXIF metadata</li>
+        <li>Check image capture date</li>
+        <li>Verify timestamp matches current date</li>
+        <li>Prevents old image reuse</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <h2>Database Storage</h2>
+    <ul>
+        <li>User ID</li>
+        <li>Image hash</li>
+        <li>Attendance date</li>
+    </ul>
+    <p>Records stored for verification and tracking.</p>
+</div>
+
+
+<!-- SYSTEM ARCHITECTURE -->
+<div class="slide">
+    <h2>System Architecture</h2>
+    <ul>
+        <li>Frontend Interface (User Upload)</li>
+        <li>Backend Processing Server (Flask)</li>
+        <li>Image Processing Engine</li>
+        <li>Database Storage System</li>
+    </ul>
+</div>
+
+
+<!-- RESULTS -->
+<div class="slide">
+    <h2>Results</h2>
+    <ul>
+        <li>Successful image upload handling</li>
+        <li>Duplicate detection implemented</li>
+        <li>Metadata verification functional</li>
+        <li>Attendance marking automated</li>
+    </ul>
+</div>
+
+
+<!-- OUTCOME -->
+<div class="slide">
+    <h2>Project Outcome</h2>
+    <ul>
+        <li>Secure attendance verification system developed</li>
+        <li>Fraud prevention through similarity check</li>
+        <li>Image authenticity verification</li>
+        <li>Scalable and digital architecture</li>
+    </ul>
+</div>
+
+
+<!-- FUTURE WORK -->
+<div class="slide">
+    <h2>Future Scope</h2>
+    <ul>
+        <li>Face recognition integration</li>
+        <li>Live webcam attendance</li>
+        <li>Cloud deployment</li>
+        <li>AI based identity verification</li>
+        <li>Mobile application integration</li>
+    </ul>
+</div>
+
+
+<!-- THANK YOU -->
+<div class="slide">
+    <h1>Thank You</h1>
+</div>
+
+
+<div class="controls">
+    <button onclick="prevSlide()">⬅ Prev</button>
+    <button onclick="nextSlide()">Next ➡</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
